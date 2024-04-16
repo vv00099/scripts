@@ -1,0 +1,34 @@
+
+
+
+interface gpon 0/0
+
+ont add 11 sn-auth 48575443C553C19D omci ont-lineprofile-id 1 ont-srvprofile-id 1 desc AZOV_M3_ProezTsentralnyy_1_Ivanov_I_I__8245_PPPOE
+
+
+ont add 4 sn-auth 49534B54872A67B0 omci ont-lineprofile-id 1 ont-srvprofile-id 1 desc AZOV_M2_Limonnyy_5_Egorov_E_E__G84_PPPOE
+
+ont port native-vlan 4 XX eth 1 vlan 300 priority 0
+ont port native-vlan 4 XX eth 2 vlan 300 priority 0
+ont port native-vlan 4 XX eth 3 vlan 300 priority 0
+ont port native-vlan 4 XX eth 4 vlan 300 priority 0
+
+ont add 1 sn-auth 4857544308DC2576 omci ont-lineprofile-id 4 ont-srvprofile-id 4 desc AZOV_M3_22-yatsa_17_Zaytsev_T_T__8245_BRIDGE
+
+
+ont add 2 sn-auth 49534B5487985660 omci ont-lineprofile-id 1 ont-srvprofile-id 1 desc AZOV_M3_Tsvetochnaya_23_Vasilev_V_V__G84_PPPOE
+
+ont port native-vlan 2 XX eth 1 vlan 300 priority 0
+ont port native-vlan 2 XX eth 2 vlan 300 priority 0
+ont port native-vlan 2 XX eth 3 vlan 300 priority 0
+ont port native-vlan 2 XX eth 4 vlan 300 priority 0
+
+quit
+
+service-port vlan 1511 gpon 0/0/11 ont XX gemport 0 multi-service user-vlan 300 tag-transform default
+
+service-port vlan 1504 gpon 0/0/4 ont XX gemport 0 multi-service user-vlan 300 tag-transform default
+
+service-port vlan 1501 gpon 0/0/1 ont XX gemport 2 multi-service user-vlan 400 tag-transform default
+
+service-port vlan 1502 gpon 0/0/2 ont XX gemport 0 multi-service user-vlan 300 tag-transform default

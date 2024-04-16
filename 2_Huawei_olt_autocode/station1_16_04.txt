@@ -1,0 +1,11 @@
+
+
+
+interface gpon 0/0
+
+ont add 6 sn-auth 53434F4D14471239 omci ont-lineprofile-id 1 ont-srvprofile-id 1 desc PESHKOVO_Mirnyy_21G_Smirnov_A_A__6699_PPPOE
+
+
+quit
+
+service-port vlan 1006 gpon 0/0/6 ont XX gemport 0 multi-service user-vlan 300 tag-transform default
