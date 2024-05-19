@@ -6,6 +6,9 @@ import winsound
 import inline
 import argparse
 
+#Данный скрипт удаляет ненужные записи из GPON станций
+#согласно файлу ONU_FOR_AUTO_DELETE.txt.
+
 #Реальных данных здесь нет
 
 #Сопоставление ip и локации станции
