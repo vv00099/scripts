@@ -1,0 +1,30 @@
+M3_OLT(config-if-gpon-0/0)#display ont optical-info 0 7
+  -----------------------------------------------------------------------------
+  ONU NNI port ID                        : 0
+  Module type                            : GPON
+  Module sub-type                        : CLASS B+
+  Used type                              : ONU
+  Encapsulation Type                     : BOSA ON BOARD
+  Optical power precision(dBm)           : 3.0
+  Vendor name                            : HUAWEI          
+  Vendor rev                             : -
+  Vendor PN                              : HW-BOB-0002     
+  Vendor SN                              : 1544WC330266A   
+  Date Code                              : 15-11-18
+  Rx optical power(dBm)                  : -21.87
+  Rx power current warning threshold(dBm): [-,-]
+  Rx power current alarm threshold(dBm)  : [-29.0,-7.0]
+  Tx optical power(dBm)                  : 2.08
+  Tx power current warning threshold(dBm): [-,-]
+  Tx power current alarm threshold(dBm)  : [0.0,5.0]
+  Laser bias current(mA)                 : 14
+  Tx bias current warning threshold(mA)  : [-,-]
+  Tx bias current alarm threshold(mA)    : [2.000,100.000]
+  Temperature(C)                         : 41
+  Temperature warning threshold(C)       : [-,-]
+                                     
+
+M3_OLT(config-if-gpon-0/0)#
+
+KULESHOVKA_OLT(config-if-gpon-0/0)#display ont optical-info 15 0
+  Failure: The ONT is not online
